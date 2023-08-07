@@ -1,3 +1,2 @@
 #!/bin/bash
-# Read /etc/passwd, extract username and home directory, and sort by username
-awk -F: '{print "User:", $1, "Home Directory:", $6}' /etc/passwd | sort -k2
+cat /etc/passwd | cut -d: -f1,6 | sort

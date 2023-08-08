@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Result in base bestchol: " . str2nr($WATER, "water") + str2nr($STIR, "stir")

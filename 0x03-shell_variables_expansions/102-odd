@@ -1,2 +1,2 @@
 #!/bin/bash
-alias print_other='sed -n "p;n"'
+:g/^/if line('.') % 2 == 1 | normal! dd | endif
